@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="textview">TextView</string>
+    <string name="text">Text</string>
+    <string name="turnon">TurnOn</string>
+    <string name="turnoff">TurnOff</string>
+    <string name="bluetooth_switcher">Bluetooth Switcher</string>
+    <string name="bt">BluetothExample</string>
+    <string name="devices_list">Devices List</string>
+    <string name="search">Search</string>
+    <string name="visible">Visible</string>
+    <string name="scan">Scan</string>
+</resources>

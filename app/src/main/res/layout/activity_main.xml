@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/lineOne"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lineTwo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_weight="10"
+                        android:ems="10"
+                        android:hint="@string/text"
+                        android:inputType="textPersonName"
+                        android:maxLines="10"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </ScrollView>
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_send"
+                android:text="Send"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lineThree"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/lineTwo"
+            android:layout_marginTop="5dp"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:maxLines="100"
+                    android:text=""
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scrollbarSize="24sp"
+                tools:ignore="NotSibling">
+
+            </ListView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Bluetooth status: indefined"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/lineThree"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnOn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_on_off"
+                android:text="On"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/btnOff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_on_off"
+                android:text="Off"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/btnScan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_on_off"
+                android:text="@string/scan"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                tools:ignore="ButtonStyle,UnusedAttribute" />
+
+            <Button
+                android:id="@+id/buttonList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_on_off"
+                android:text="DevList"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                tools:ignore="ButtonStyle,UnusedAttribute" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
